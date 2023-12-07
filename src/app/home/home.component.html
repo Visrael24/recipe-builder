@@ -1,0 +1,17 @@
+
+<h1>Welcome!</h1>
+<h3>
+    This application takes multiple recipes and builds you a combined cart for easier shopping! It also parses the ingredients by type so you can find them
+    easily in the shopping center!  
+</h3>
+<div class="upper-content">
+    <input type="text" [(ngModel)]="url">
+    <button (click)="submit()">Submit</button>
+    <p *ngIf='!isValid' class="value-notice" > Invalid Link</p>
+</div>
+<div class="lower-content">
+    <div class="supported-sites">
+        <h3>Supported Sites</h3>
+        <div class="sites">sites</div>
+    </div>
+</div>
